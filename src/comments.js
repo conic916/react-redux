@@ -1,10 +1,10 @@
 
 import {
-	ADD_COMMENT,
-	REMOVE_COMMENT,
-	EDIT_COMMENT,
-	THUMB_UP_COMMENT,
-	THUMB_DOWN_COMMENT
+    ADD_COMMENT,
+    REMOVE_COMMENT,
+    EDIT_COMMENT,
+    THUMB_UP_COMMENT,
+    THUMB_DOWN_COMMENT
 } from './actions.js';
 
 
@@ -27,7 +27,7 @@ export function comments(state = [], action) {
             return {
                 comments: state.comments.map(comment => {
                     if (comments.id === action.id) {
-                        comments.text, action.text;
+                        comment.text = action.text;
                     }
                     return comment;
                 })
@@ -52,7 +52,7 @@ export function comments(state = [], action) {
                     return comment;
                 })
             };
-// break : przerywa !!!!  
+        // break : przerywa !!!!  
         default:  // jesli przypadki sie nie spelnia, to zwraca state
             return state;
     }

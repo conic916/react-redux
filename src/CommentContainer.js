@@ -2,7 +2,7 @@
 
 // connect - funkcja ktora laczy komponenty do store
 // nie modyfikuje komponentow, zwraca tylko nowy z nowymi funkcjonalnosciami
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Comment from './Comment';
 import { thumbUpComment, thumbDownComment, removeComment, editComment } from './actions.js';
 // zwraca argument mapStateToProps => zajmuje sie mapowaniem odpowiedniej porcji stanu 

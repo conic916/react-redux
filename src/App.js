@@ -1,5 +1,5 @@
 import React from 'react';
-import CommentContainer from './CommentContainer';
+import CommentsListContainer from './CommentsListContainer';
 import DevTools from './DevTools';
 import './App.css';
 
@@ -8,7 +8,9 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      Tu będzie lista komentarzy!
+      <CommentsListContainer />
+
+      <DevTools />
     </div>
   );
 };
